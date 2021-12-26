@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Be Millionaire</title>
-</head>
-<body>
-  <h1>Let's be Millionaire!</h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Getting money</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container" id="app">
+      <div class="notification is-primary" v-if="notification">
+        <p> {{ message }} </p>
+        <progress class="progress">0%</progress>
+      </div>
+      <h1 class="title mb-6">
+        How getting money for easy?
+      </h1>
+      <p class="subtitle">
+        Here's an easy way to make some money.
+        <br>
+        Try it out!
+      </p>
+      <button class="button is-primary is-medium" @click="clicked">
+        Learn More
+      </button>
+    </div>
+  </section>
+  <script>
+    new Vue({
+      el: "#app",
+      data: {
+        message: "",
+        notification: false,
+      },
+      methods: {
+        clicked: function() {
+          this.notification = true;
+          setTimeout(() => {
+            this.message = "We are taking photos...";
+          }, 0);
+          setTimeout(() => {
+            this.message = "We identifying the address from the IP address...";
+          }, 1392);
+          setTimeout(() => {
+            this.message = "We identifying your credit card number...";
+          }, 3319);
+          setTimeout(() => {
+            this.message = "We identifying the address from the IP address...";
+          }, 5562);
+          setTimeout(() => {
+            this.message = "The entire process has been completed.";
+          }, 7716);
+          setTimeout(() => {
+            location.href = "hack2.html";
+          }, 8816);
+        },
+      },
+    })
+  </script>
+  </body>
 </html>
