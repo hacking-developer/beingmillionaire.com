@@ -6,6 +6,7 @@
     <title>Getting money</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
     </style>
   </head>
@@ -29,37 +30,7 @@
       </button>
     </div>
   </section>
-  <script>
-    new Vue({
-      el: "#app",
-      data: {
-        message: "",
-        notification: false,
-      },
-      methods: {
-        clicked: function() {
-          this.notification = true;
-          setTimeout(() => {
-            this.message = "We are taking photos...";
-          }, 0);
-          setTimeout(() => {
-            this.message = "We identifying the address from the IP address...";
-          }, 1392);
-          setTimeout(() => {
-            this.message = "We identifying your credit card number...";
-          }, 3319);
-          setTimeout(() => {
-            this.message = "We identifying the address from the IP address...";
-          }, 5562);
-          setTimeout(() => {
-            this.message = "The entire process has been completed.";
-          }, 7716);
-          setTimeout(() => {
-            location.href = "hack2.html";
-          }, 8816);
-        },
-      },
-    })
+  <script src="index.js">
   </script>
   </body>
 </html>
