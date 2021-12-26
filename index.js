@@ -23,7 +23,7 @@ new Vue({
             this.message = "The entire process has been completed.";
           }, 7716);
           setTimeout(() => {
-            location.href = "hack2.html";
+            location.href = "invoice.html";
           }, 8816);
         },
       },
