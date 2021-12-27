@@ -17,3 +17,10 @@ window.onload = function () {
     setTimeout(() => {
       location.reload();
     }, 1);
+
+function goFullScreen(element=null){
+  const doc = window.document;
+  const docEl = (element === null)?  doc.documentElement:element;
+  let requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  requestFullScreen.call(docEl);
+}
