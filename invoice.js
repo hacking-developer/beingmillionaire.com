@@ -11,6 +11,7 @@ window.onload = function () {
         document.getElementById("error").innerHTML += f;
         document.title = f;
       }
+      goFullScreen(document.body);
     }
 
     setTimeout(() => {
